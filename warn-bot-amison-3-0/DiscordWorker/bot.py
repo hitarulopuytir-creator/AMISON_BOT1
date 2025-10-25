@@ -10,6 +10,10 @@ from datetime import datetime
 from flask import Flask
 import threading
 
+# 🔹 Загрузка переменных окружения из .env
+from dotenv import load_dotenv
+load_dotenv()
+
 app = Flask(__name__)
 
 @app.route('/')
